@@ -16,8 +16,8 @@
     }
 
     var nome = prompt("Qual o seu nome?");
-    var alturaInformada = prompt("Digite a sua altura: ");
-    var pesoInformado = prompt("Digite o seu peso: ");
+    var alturaInformada = parseFloat(prompt("Digite a sua altura: "));
+    var pesoInformado = parseInt(prompt("Digite o seu peso: "));
 
     var imc = calculoImc(pesoInformado, alturaInformada);
 
