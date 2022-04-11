@@ -9,18 +9,18 @@
     function mostra(frase) {
 
         document.write(frase);
-        pulaLinha();
     }
     function calculoImc(peso, altura) {
 
-        var imc = peso / (altura * altura);
-        return imc;
+        return peso / (altura * altura);
     }
 
-    var imcRene = calculoImc(65, 1.73);
-    var imcAmigo = calculoImc(73, 1.77);
+    var nome = prompt("Qual o seu nome?");
+    var alturaInformada = prompt("Digite a sua altura: ");
+    var pesoInformado = prompt("Digite o seu peso: ");
 
-    mostra("O imc de Rêne é: " + Math.round(imcRene));
-    mostra("O imc do meu amigo é: " + Math.round(imcAmigo));
+    var imc = calculoImc(pesoInformado, alturaInformada);
+
+    mostra(nome +", o seu IMC é: " + Math.round(imc));
 
 </script>
