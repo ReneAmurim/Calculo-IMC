@@ -9,6 +9,7 @@
     function mostra(frase) {
 
         document.write(frase);
+        pulaLinha();
     }
     function calculoImc(peso, altura) {
 
@@ -23,4 +24,18 @@
 
     mostra(nome +", o seu IMC é: " + Math.round(imc));
 
+    if(imc < 18.5) {
+
+        mostra("O eu IMC está abaixo do recomendado.");
+    }
+
+    if(imc > 35) {
+
+        mostra("O seu IMC está acima do recomendado.");
+    }
+    
+    if(imc >= 18.5 && imc <= 35) {
+
+        mostra("O seu IMC está exelente.");
+    }
 </script>
